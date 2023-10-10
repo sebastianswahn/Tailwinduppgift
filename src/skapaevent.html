@@ -1,29 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Rosas resebyrå</title>
   </head>
-<body>
-    <form class="flex flex-col w-screen h-screen m-8 bg-pink-200">
+  <body class="bg-red-700">
+    <header
+    class="w-full h-20 text-center justify-center text-3xl font-serif bg-pink-300 rounded-lg text-black sticky mx-1 mt-1 sm:text-4xl"
+  >
+    Boka din resa med Rosas resebyrå!
+  </header>
+  <main class="sm:flex">
+    <nav>
+      <ul
+        class="flex flex-row list-none w-screen h-28 text-2xl bg-pink-300 rounded-xl mt-2 ml-1 p-2 sm:flex sm:flex-col sm:w-32 sm:h-72 sm:gap-x-20 pl-5 pt-6 sm:text-4xl sm:rounded-xl sm:mt-4 sm:ml-4 sm:gap-4 sm:mr-2"
+      >
+        <li class="w-1/3 pt-3">
+          <a
+            class="no-underline text-gray-500 hover:underline hover:text-black"
+            href="./index.html"
+            >Hem</a
+          >
+        </li>
+        <li class="w-1/3">
+          <a
+            class="no-underline text-gray-500 hover:underline hover:text-black"
+            href="./Allaevent.html"
+            >Alla Event</a
+          >
+        </li>
+        <li class="w-1/3">
+          <a
+            class="no-underline text-gray-500 hover:underline hover:text-black"
+            href="./skapaevent.html"
+            >Skapa Event</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="inline-block justify-center items-center">
+      <form
+        class="flex flex-col w-screen h-screen m-4 bg-pink-200 text-center p-10 rounded-lg"
+      >
         <label for="Country">Country:</label>
-        <input type="text" placeholder="Country">
+        <input type="text" placeholder="Ex, Sweden, France, China" />
 
         <label for="City">City</label>
-        <input type="text" placeholder="City">
+        <input type="text" placeholder="Ex, Stockholm, Paris, Beijing" />
 
-        <label for="traveldate">Select the date and time you wish to travel from Arlanda</label>
-        <imput type="datetime-local">
+        <label for="traveldate"
+          >Select the date and time you wish to travel from Arlanda</label
+        >
+        <input type="datetime-local" class="border rounded px-3 py-2" />
 
-        <label for="returmdate">Select the date and time you wish to arrive at Arlanda</label>
-        <imput type="datetime-local" placeholder="yy-mm-dd" id="date" name="date">
+        <label for="returmdate"
+          >Select the date and time you wish to arrive at Arlanda</label
+        >
+        <input type="datetime-local" class="border rounded px-3 py-2" />
+        <label for="Other Requests">If you have any other requests about your journey, please write them here</label>
+        <textarea id="Other Requests" rows="4" class="text-sm" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
+        <p class="text-xs text-end">Max. 800 letters </p>
 
-        <button type="submit">
-            Skicka förfrågan
+        <div class="p-4">
+        <button
+          type="submit"
+          class="bg-blue-400 w-28 h-12 rounded-lg"
+        >
+          Skicka förfrågan
         </button>
-    </form>
-    
-</body>
+      </form>
+      </div>
+    </div>
+</main>
+  </body>
 </html>
