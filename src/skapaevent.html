@@ -42,31 +42,52 @@
     </nav>
     <div class="inline-block justify-center items-center m-0 md:mx-14 lg:mx-36 xl:mx-64">
       <form
-        class="flex flex-col w-full h-screen m-4 bg-pink-200 text-center p-10 rounded-lg"
-      >
-        <label for="Country">Country:</label>
-        <input type="text" placeholder="Ex, Sweden, France, China" />
+        class="flex flex-col w-full h-full m-4 bg-pink-200 text-center p-10 rounded-lg text-lg"
+      > <div class="h-16">
+        <label for="Country">Country<br></label>
+        <input class="w-60" type="text" id="Country" name="Country" placeholder="Ex, Sweden, France, China" />
+        </div>
+        <div class="p-8">
+        <label for="City">City<br></label>
+        <input type="text" class="w-60" id="City" name="City" placeholder="Ex, Stockholm, Paris, Beijing" />
+        </div>
+        <div class="p-8">
+        <label for="Amount">How many wish to join for this journey?<br></label>
+        <input class="w-16" type="number" id="Amount" name="Amount" min="1" max="32" placeholder="1-32">
+        </div>
 
-        <label for="City">City</label>
-        <input type="text" placeholder="Ex, Stockholm, Paris, Beijing" />
+        <label for="type">Are you traveling private or business?</label>
 
+        <div class="inline-block p-6">
+        <label for="type">Private<br></label>
+        <input type="checkbox" id="type" name="private"><br>
+        <label for="type">Business<br></label>
+        <input type="checkbox" id="type" name="Type">
+        </div>
+        <div class="p-8">
         <label for="traveldate"
           >Select the date and time you wish to travel from Arlanda</label
         >
         <input type="datetime-local" class="border rounded px-3 py-2" />
-
+        </div>
+        <div class="p-8">
         <label for="returmdate"
           >Select the date and time you wish to arrive at Arlanda</label
         >
         <input type="datetime-local" class="border rounded px-3 py-2" />
+        </div>
+        <div class="p-4">
         <label for="Other Requests">If you have any other requests about your journey, please write them here</label>
-        <textarea id="Other Requests" rows="4" class="text-sm" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
+        </div>
+        <div class="border-gray-800 border-2 rounded-md">
+        <textarea id="Other Requests" rows="5" class="text-sm w-full h-full" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
+        </div>
         <p class="text-xs text-end">Max. 800 letters </p>
 
         <div class="p-4">
         <button
           type="submit"
-          class="bg-blue-400 w-28 h-12 rounded-lg"
+          class="bg-blue-400 w-32 h-16 rounded-lg"
         >
           Skicka förfrågan
         </button>
