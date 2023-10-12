@@ -12,7 +12,7 @@
     >
       Boka din resa med Rosas resebyrå!
     </header>
-    <main class="sm:flex">
+    <main class="sm:flex w-screen" >
       <nav>
         <ul
           class="flex flex-row list-none w-screen h-28 text-2xl bg-pink-300 rounded-xl mt-2 ml-1 p-2 sm:flex sm:flex-col sm:w-32 sm:h-96 sm:gap-x-20 pl-5 pt-6 sm:text-4xl sm:rounded-xl sm:mt-4 sm:ml-4 sm:gap-4 sm:mr-2"
@@ -47,30 +47,123 @@
           </li>
         </ul>
       </nav>
+
+      <!--     <section1 class="flex flex-row"> -->
+    </section>
+    <section class="flex flex-row justify-center pt-3 text-center">
+      <div>
+        <h2 class="py-8 font-bold text-center text-2xl">
+          If you are planning to book your vacation through our company
+        </h2>
+        <img
+          src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2xkZXIlMjB3b21hbiUyMGhhcHB5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+          alt="picture of CEO"
+          class="my-6"
+        />
+        <p>
+          We are very happy to take requests, which you can send through a
+          form that is located
+          <a class="underline hover:font-bold text-blue-700" href="./skapaevent.html"
+            >here</a
+          >, if you wish one of our existing products but with modification
+          you can contact me directly through any of the ways listed below. If
+          you have any other questions feel free to use the form on this page
+          below, and and one of my employees will get back to you as soon as
+          possible.
+        </p>
+        <p class="py-8">
+          Call at available during workhours <br />
+          <a class="underline text-blue-700" href="tel:+46728971299"
+            >072-8971299</a
+          ><br />
+          <a
+            class="underline text-blue-700"
+            href="mailto:examplemail.rosa@resa.se"
+            >examplemail.rosa@resa.se</a
+          >
+        </p>
+        <p class="py-5">
+          Looking forward to hearing your ideas and ambitions, and remember,
+          there are no stupid questions!
+        </p>
+      </div>
+    </section>
+      <section class="flex flex-col p-3 pr-4">
+        <div>
+          <h2 class="font-bold py-8 text-center text-2xl">The team in our<br> swedish office</h2>
+          <img
+            src="https://media.istockphoto.com/id/1413791618/photo/happy-colleagues-doing-team-building-activity.webp?b=1&s=170667a&w=0&k=20&c=p7jJYRY6pGEvAIHEL_gQPNjV_oeNfeuRoxrHS0fSkYg="
+            alt="our team"
+            class="my-6"
+          />
+          <p class="text-center">
+            The 40 employees are located all over the world, although the office
+            is located in Sweden. The team consists of guides, travel agents
+            like Rosa herself, but also locals in specific areas that are
+            popular, every employee is just as important, and without this
+            marvelous team we would not have come this far.
+          </p>
+          <div class="">
+            <h1 class="py-8 font-bold text-2xl text-center">Om Rosas resebyrå</h1>
+            <p>
+              Today we are a company with 40 employees, but Rosa, who alone
+              started the company 12 years ago, with a great interest and
+              experience in travel, good skills in planning and communication, she
+              decided to start the travel agency, slowly but surely she has built
+              up a succesfull company that planned together with her team planned
+              over 500 fantastic trips
+            </p>
+          </div>
+        </div>
+
     </main>
-    <div>
-      <h1>Rubrik</h1>
-      <p>Om företaget</p>
-    </div>
-    <div>
-      <h2>Rubrik 2</h2>
-      <p>Om teamet</p>
-    </div>
-    <div>
-      <h2>Rubrik 2</h2>
-      <p>Info från VD Rosa</p>
-      <p>
-        Kontaktuppgifter till Rosa, funktion för mobil telefonnummer som
-        fungerar som länk som gör att man ringer direkt, samma för mailadress
-      </p>
-      <img /> på Rosa <img /> på teamet
-    </div>
-    <div>
-      <form>
-        Detta ska vara ett kontaktformulär där man kan fylla i, namn, mail,
-        meddelande,och sluta med en submitknapp
-      </form>
-    </div>
-    <div></div>
+    <section
+      class="inline-flex text-center w-screen justify-center items-center"
+    >
+      <div class="flex flex-row justify-center m-8">
+        <form action="/submit" method="post">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-600">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe" 
+              class="w-full border rounded px-3 py-2"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-600">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="John.doe@gmail.com" 
+              name="email"
+              class="w-full border rounded px-3 py-2"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-600">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Write your concerns or questions here"
+              maxlength="1400"
+              class="w-full border rounded px-3 py-2"
+            ></textarea>
+            <div class="flex justify-end text-xs">Max 1400 letters</div>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+          >
+            Send
+          </button>
+        </form>
+        </div>
+      </div>
+    </section>
+    <!--     </section1> -->
   </body>
 </html>
