@@ -51,8 +51,8 @@
     </nav>
     <div class="flex flex-col md:mx-14 lg:mx-36 xl:mx-64">
       <form
-        class="flex flex-col m-2 bg-pink-200 text-center p-6 rounded-lg text-lg">
-        <fieldset class="flex flex-col border-4 rounded-lg border-solid border-gray-400 p-8">
+        class="flex flex-col m-2 bg-pink-200 text-center rounded-lg text-lg">
+        <fieldset class="flex flex-col border-4 rounded-lg border-solid border-gray-400">
             <legend class="text-lg italic">Tailor your own journey</legend>
             <div>
         <label for="name" class="font-bold text-lg">Choose a name for your journey<br></label>
@@ -62,16 +62,16 @@
         <label for="Country" class="font-bold text-lg">Country<br></label>
         <input class="w-60 m-5" type="text" id="Country" name="Country" placeholder="Ex, Sweden, France, China" />
         </div>
-        <div class="p-8">
+        <div class="">
         <label for="City" class="font-bold text-lg">City<br></label>
         <input type="text" class="w-60 m-5" id="City" name="City" placeholder="Ex, Stockholm, Paris, Beijing" />
         </div>
-        <div class="p-3">
-        <label for="Amount" class="font-bold text-lg">How many wish to join for this journey?<br></label>
+        <div class="">
+        <label for="Amount" class="font-bold text-lg">How many wish<br class="form:hidden">  to join for<br class="form:hidden">  this journey?<br></label>
         <input class="w-16 m-5" type="number" id="Amount" name="Amount" min="1" max="32" placeholder="1-32">
         </div>
-        <div class="flex flex-col p-4">
-        <label for="type" class="font-bold text-lg">Are you traveling private or business?</label><br>
+        <div class="flex flex-col ">
+        <label for="type" class="font-bold text-lg">Are you traveling<br class="form:hidden"> private or business?</label><br>
 
         
         <label for="type">Private<br></label>
@@ -79,26 +79,26 @@
         <label for="type">Business<br></label>
         <input type="checkbox" id="type" name="Type">
         </div>
-        <div class="p-4">
-        <label for="traveldate"  class="font-bold text-lg p-4"
-          >Select the date and time you wish to travel from Arlanda</label
+        <div class="">
+        <label for="traveldate"  class="font-bold text-lg "
+          >Select the date<br class="form:hidden">  and time you wish<br class="form:hidden"> to travel from Arlanda</label
         ><br>
         <input type="datetime-local" class="border rounded px-3 py-2" />
         </div>
-        <div class="p-4">
+        <div>
         <label for="returmdate" class="font-bold text-lg"
-          >Select the date and time you wish to arrive at Arlanda</label
+          >Select the date<br class="form:hidden">and time you wish<br class="form:hidden">to arrive<br class="form:hidden"> at Arlanda</label
         >
         <input type="datetime-local" class="border rounded px-3 py-2" />
         </div>
-        <div class="p-4">
-        <label for="Other Requests" class="font-bold text-lg">If you have any other requests about your journey, please write them here</label>
+        <div class="">
+        <label for="Other Requests" class="font-bold text-lg">If you have any other<br class="form:hidden"> requests about your journey,<br class="form:hidden"> please write them here</label>
         </div>
-        <fieldset class="border-4 rounded-lg border-solid border-gray-400 p-0">
+        <fieldset class="border-4 rounded-lg border-solid border-gray-400">
           <legend class="italic">Whatever you're dreaming of</legend>
-        <textarea id="Other Requests" rows="5" class="text-sm w-96" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
+        <textarea id="Other Requests" rows="5" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
       
-        <p class="text-xs text-end">Max. 800 letters </p>
+        <p class="text-xs text-center">Max. 800 letters </p>
         </fieldset>
         <div class="p-4">
         <button
@@ -107,7 +107,6 @@
         >
           Send request
         </button> 
-        </div>
       </form>
       </div>
     </div>
