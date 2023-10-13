@@ -6,6 +6,8 @@ module.exports = {
       xxs: "330px",
       // => @media (min-width: 330px) { ... }
 
+      nav: "362px",
+
       xs: "475px",
       // => @media (min-width: 475px) { ... }
 
