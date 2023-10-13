@@ -10,12 +10,12 @@
     <header
     class="pt-2 h-16 text-center justify-center text-xl font-serif bg-pink-300 rounded-lg text-black sticky mx-1 mt-1 sm:text-4xl xs:h-20 xxs:text-3xl xxs:h-24 sm:h-28"
   >
-    Book your vacation with Rosas travelagency!
+    Book your vacation with Rosas travel agency!
   </header>
   <main class="sm:flex">
     <nav class="mt-1">
       <ul
-        class="flex flex-row list-none text-xs bg-pink-300 rounded-md pt-4 pl-4 mx-1 sm:flex sm:flex-col sm:w-48 md:w-40 lg:w-72 sm:h-96 sm:text-4xl sm:rounded-md sm:mt-1 sm:ml-1 sm:mr-2 sm:pl-1 xs:text-xl xxs:pb-4 sm:gap-y-6 2xl:h-2/5"
+        class="flex flex-row list-none text-xs bg-pink-300 rounded-md py-4 pl-4 mx-1 sm:flex sm:flex-col sm:w-48 md:w-40 lg:w-72 sm:h-96 sm:text-4xl sm:rounded-md sm:mt-1 sm:ml-1 sm:mr-2 sm:pl-1 xs:text-xl xxs:pb-4 sm:gap-y-6 2xl:h-2/5"
       >
         <li class="w-2/12 sm:w-full sm:text-center h-1/4 sm:pt-1">
           <a
@@ -51,27 +51,27 @@
     </nav>
     <div class="flex flex-col md:mx-14 lg:mx-36 xl:mx-64">
       <form
-        class="flex flex-col m-2 bg-pink-200 text-center rounded-lg text-lg">
-        <fieldset class="flex flex-col border-4 rounded-lg border-solid border-gray-400">
+        class="flex flex-col m-2 bg-pink-200 text-center rounded-lg form:text-lg text-md">
+        <fieldset class="flex flex-col border-4 m-6 rounded-lg border-solid border-gray-400">
             <legend class="text-lg italic">Tailor your own journey</legend>
             <div>
-        <label for="name" class="font-bold text-lg">Choose a name for your journey<br></label>
-        <textarea class="m-6 w-56" id="name" name="name" maxlength="75" placeholder="Ex. My honeymoon"></textarea>
+        <label for="name" class="font-bold text-md form:text-lg">Choose a name<br class="form:hidden">for your journey</label>
+        <textarea class="my-4 w-36 form:w-56" id="name" name="name" maxlength="75" placeholder="Ex. My honeymoon"></textarea>
         </div>
         <div class="h-16">
-        <label for="Country" class="font-bold text-lg">Country<br></label>
-        <input class="w-60 m-5" type="text" id="Country" name="Country" placeholder="Ex, Sweden, France, China" />
+        <label for="Country" class="font-bold text-md form:text-lg">Country<br></label>
+        <input class="w-36 form:w-60 my-4" type="text" id="Country" name="Country" placeholder="Ex, Sweden, France, China" />
+        </div>
+        <div class="my-6">
+        <label for="City" class="font-bold mb-5 text-md form:text-lg">City<br></label>
+        <input type="text" class="w-36 form:w-60 mt-4" id="City" name="City" placeholder="Ex, Stockholm, Paris, Beijing" />
         </div>
         <div class="">
-        <label for="City" class="font-bold text-lg">City<br></label>
-        <input type="text" class="w-60 m-5" id="City" name="City" placeholder="Ex, Stockholm, Paris, Beijing" />
-        </div>
-        <div class="">
-        <label for="Amount" class="font-bold text-lg">How many wish<br class="form:hidden">  to join for<br class="form:hidden">  this journey?<br></label>
+        <label for="Amount" class="font-bold text-md form:text-lg">How many wish<br class="form:hidden">  to join for<br class="form:hidden">  this journey?<br></label>
         <input class="w-16 m-5" type="number" id="Amount" name="Amount" min="1" max="32" placeholder="1-32">
         </div>
-        <div class="flex flex-col ">
-        <label for="type" class="font-bold text-lg">Are you traveling<br class="form:hidden"> private or business?</label><br>
+        <div class="flex flex-col py-6">
+        <label for="type" class="font-bold text-md form:text-lg">Are you traveling<br class="form:hidden"> private or business?</label><br>
 
         
         <label for="type">Private<br></label>
@@ -79,24 +79,24 @@
         <label for="type">Business<br></label>
         <input type="checkbox" id="type" name="Type">
         </div>
-        <div class="">
-        <label for="traveldate"  class="font-bold text-lg "
+        <div class="py-6">
+        <label for="traveldate"  class="font-bold text-md form:text-lg "
           >Select the date<br class="form:hidden">  and time you wish<br class="form:hidden"> to travel from Arlanda</label
         ><br>
-        <input type="datetime-local" class="border rounded px-3 py-2" />
+        <input type="datetime-local" class="border rounded w-32 form:w-2/3 px-3 my-4" />
         </div>
         <div>
-        <label for="returmdate" class="font-bold text-lg"
-          >Select the date<br class="form:hidden">and time you wish<br class="form:hidden">to arrive<br class="form:hidden"> at Arlanda</label
+        <label for="returmdate" class="font-bold text-md form:text-lg"
+          >Select the date<br class="form:hidden">and time you wish<br class="form:hidden">to arrive<br class="form:hidden"> at Arlanda<br></label
         >
-        <input type="datetime-local" class="border rounded px-3 py-2" />
+        <input type="datetime-local" class="border my-4 rounded w-32 form:w-2/3 px-3" />
         </div>
-        <div class="">
-        <label for="Other Requests" class="font-bold text-lg">If you have any other<br class="form:hidden"> requests about your journey,<br class="form:hidden"> please write them here</label>
+        <div class="my-4">
+        <label for="Other Requests" class="font-bold text-md form:text-lg">If you have any<br class="form:hidden"> other requests about<br class="form:hidden">your journey, write<br class="form:hidden"> them here</label>
         </div>
-        <fieldset class="border-4 rounded-lg border-solid border-gray-400">
-          <legend class="italic">Whatever you're dreaming of</legend>
-        <textarea id="Other Requests" rows="5" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
+        <fieldset class="border-4 mx-6 rounded-lg border-solid border-gray-400">
+          <legend class="italic">Whatever you're<br class="form:hidden"> dreaming of</legend>
+        <textarea id="Other Requests" class="w-32 form:w-2/3" rows="5" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
       
         <p class="text-xs text-center">Max. 800 letters </p>
         </fieldset>
