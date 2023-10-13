@@ -6,51 +6,55 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Rosas resebyrå</title>
   </head>
-  <body class="bg-red-700">
+  <body class="bg-slate-300">
     <header
-    class="w-full h-20 text-center justify-center text-3xl font-serif bg-pink-300 rounded-lg text-black sticky mx-1 mt-1 sm:text-4xl"
+    class="pt-2 h-16 text-center justify-center text-xl font-serif bg-pink-300 rounded-lg text-black sticky mx-1 mt-1 sm:text-4xl xs:h-20 xxs:text-3xl xxs:h-24 sm:h-28"
   >
-    Boka din resa med Rosas resebyrå!
+    Book your vacation with Rosas travelagency!
   </header>
   <main class="sm:flex">
-    <nav>
+    <nav class="mt-1">
       <ul
-        class="flex flex-row list-none h-28 text-2xl bg-pink-300 rounded-xl mt-2 ml-1 p-2 sm:flex sm:flex-col sm:w-32 sm:h-96 sm:gap-x-20 pl-5 pt-6 sm:text-4xl sm:rounded-xl sm:mt-4 sm:ml-4 sm:gap-4 sm:mr-2"
+        class="flex flex-row list-none text-xs bg-pink-300 rounded-md pt-4 pl-4 mx-1 sm:flex sm:flex-col sm:w-48 md:w-40 lg:w-72 sm:h-96 sm:text-4xl sm:rounded-md sm:mt-1 sm:ml-1 sm:mr-2 sm:pl-1 xs:text-xl xxs:pb-4 sm:gap-y-6 2xl:h-2/5"
       >
-        <li class="w-1/4 pt-3">
+        <li class="w-2/12 sm:w-full sm:text-center h-1/4 sm:pt-1">
           <a
             class="no-underline text-gray-500 hover:underline hover:text-black"
             href="./index.html"
             >Home</a
           >
         </li>
-        <li class="w-1/4">
+        <li class="w-3/12 sm:w-full text-center sm:h-1/4">
           <a
             class="no-underline text-gray-500 hover:underline hover:text-black"
             href="./allevents.html"
             >All Events</a
           >
         </li>
-        <li class="w-1/4">
+        <li class="w-4/12 sm:w-full text-center sm:h-1/4 sm:pb-4">
           <a
             class="no-underline text-gray-500 hover:underline hover:text-black"
             href="./createevent.html"
             >Create Event</a
           >
         </li>
-        <li class="w-1/4">
-            <a
-              class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
-              href="./aboutus.html"
-              >About us</a
-            >
-          </li>
+        <li
+          class="w-3/12 sm:text-center text-end sm:w-full pr-1 sm:h-1/4 pb-0"
+        >
+          <a
+            class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
+            href="./aboutus.html"
+            >About us</a
+          >
+        </li>
       </ul>
     </nav>
-    <div class="inline-block justify-center items-center m-0 md:mx-14 lg:mx-36 xl:mx-64">
+    <div class="flex flex-col md:mx-14 lg:mx-36 xl:mx-64">
       <form
-        class="flex flex-col w-full h-full m-4 bg-pink-200 text-center p-10 rounded-lg text-lg">
-        <div>
+        class="flex flex-col m-2 bg-pink-200 text-center p-6 rounded-lg text-lg">
+        <fieldset class="flex flex-col border-4 rounded-lg border-solid border-gray-400 p-8">
+            <legend class="text-lg italic">Tailor your own journey</legend>
+            <div>
         <label for="name" class="font-bold text-lg">Choose a name for your journey<br></label>
         <textarea class="m-6 w-56" id="name" name="name" maxlength="75" placeholder="Ex. My honeymoon"></textarea>
         </div>
@@ -66,22 +70,22 @@
         <label for="Amount" class="font-bold text-lg">How many wish to join for this journey?<br></label>
         <input class="w-16 m-5" type="number" id="Amount" name="Amount" min="1" max="32" placeholder="1-32">
         </div>
+        <div class="flex flex-col p-4">
+        <label for="type" class="font-bold text-lg">Are you traveling private or business?</label><br>
 
-        <label for="type" class="font-bold text-lg">Are you traveling private or business?</label>
-
-        <div class="inline-block p-6">
+        
         <label for="type">Private<br></label>
         <input type="checkbox" id="type" name="private"><br>
         <label for="type">Business<br></label>
         <input type="checkbox" id="type" name="Type">
         </div>
-        <div class="p-8">
-        <label for="traveldate"  class="font-bold text-lg p-6"
+        <div class="p-4">
+        <label for="traveldate"  class="font-bold text-lg p-4"
           >Select the date and time you wish to travel from Arlanda</label
-        >
+        ><br>
         <input type="datetime-local" class="border rounded px-3 py-2" />
         </div>
-        <div class="p-8">
+        <div class="p-4">
         <label for="returmdate" class="font-bold text-lg"
           >Select the date and time you wish to arrive at Arlanda</label
         >
@@ -90,18 +94,20 @@
         <div class="p-4">
         <label for="Other Requests" class="font-bold text-lg">If you have any other requests about your journey, please write them here</label>
         </div>
-        <div class="border-gray-800 border-2 rounded-md">
-        <textarea id="Other Requests" rows="5" class="text-sm w-full h-full" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
-        </div>
+        <fieldset class="border-4 rounded-lg border-solid border-gray-400 p-0">
+          <legend class="italic">Whatever you're dreaming of</legend>
+        <textarea id="Other Requests" rows="5" class="text-sm w-96" placeholder="Ex. art, history, diving, mountains, sunbathing, food etc." maxlength="1200"></textarea>
+      
         <p class="text-xs text-end">Max. 800 letters </p>
-
+        </fieldset>
         <div class="p-4">
         <button
           type="submit"
           class="bg-blue-400 w-32 h-16 rounded-lg"
         >
           Send request
-        </button>
+        </button> 
+        </div>
       </form>
       </div>
     </div>
