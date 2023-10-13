@@ -8,37 +8,37 @@
   </head>
   <body>
     <header
-      class="w-screen h-20 text-center justify-center text-3xl font-serif bg-pink-300 rounded-lg text-black sticky mx-1 mt-1 sm:text-4xl"
+      class="pt-5 h-20 text-center justify-center text-3xl font-serif bg-pink-300 rounded-lg text-black sticky mx-1 mt-1 sm:text-4xl"
     >
       Boka din resa med Rosas resebyrå!
     </header>
-    <main class="sm:flex w-screen" >
-      <nav>
+    <main class="sm:flex" >
+      <nav class="mt-1">
         <ul
-          class="flex flex-row list-none w-screen h-28 text-2xl bg-pink-300 rounded-xl mt-2 ml-1 p-2 sm:flex sm:flex-col sm:w-32 sm:h-96 sm:gap-x-20 pl-5 pt-6 sm:text-4xl sm:rounded-xl sm:mt-4 sm:ml-4 sm:gap-4 sm:mr-2"
+          class="flex flex-row list-none text-2xl bg-pink-300 rounded-xl ml-1 p-2 sm:flex sm:flex-col sm:w-32 sm:h-96 sm:gap-x-20 pl-5 pt-6 sm:text-4xl sm:rounded-xl sm:mt-4 sm:ml-4 sm:gap-4 sm:mr-2"
         >
-          <li class="w-1/4 pt-3">
+          <li class="px-8">
             <a
               class="no-underline text-gray-500 hover:underline hover:text-black"
               href="./index.html"
               >Hem</a
             >
           </li>
-          <li class="w-1/3">
+          <li class="px-8">
             <a
               class="no-underline text-gray-500 hover:underline hover:text-black"
               href="./Allaevent.html"
               >Alla Event</a
             >
           </li>
-          <li class="w-1/3">
+          <li class="px-8">
             <a
               class="no-underline text-gray-500 hover:underline hover:text-black"
               href="./skapaevent.html"
               >Skapa Event</a
             >
           </li>
-          <li class="w-1/3">
+          <li class="px-8">
             <a
               class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
               href="#"
@@ -47,19 +47,18 @@
           </li>
         </ul>
       </nav>
-
-      <!--     <section1 class="flex flex-row"> -->
     </section>
-    <section class="flex flex-row justify-center pt-3 text-center">
+    <section class=" flex flex-col justify-center pt-3 text-center bg-pink-200 rounded-md mx-1 mt-1 sm:mt-6 px-4">
       <div>
-        <h2 class="py-8 font-bold text-center text-2xl">
-          If you are planning to book your vacation through our company
-        </h2>
+        <h1 class="text-xl font-semibold sans">Rosa Engqvist CEO of Rosas Travel Agency</h1>
         <img
           src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2xkZXIlMjB3b21hbiUyMGhhcHB5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
           alt="picture of CEO"
-          class="my-6"
+          class="my-6 w-full"
         />
+        <h2 class="py-8 font-semibold text-center text-xl">
+          If you are planning to book your vacation through our company
+        </h2>
         <p>
           We are very happy to take requests, which you can send through a
           form that is located
@@ -86,16 +85,59 @@
           Looking forward to hearing your ideas and ambitions, and remember,
           there are no stupid questions!
         </p>
+        <div class="flex flex-row justify-center m-8">
+            <form action="/submit" method="post">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-600">Name</label>
+                <input
+                  type="text" maxlength="50"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe" 
+                  class="w-full border rounded px-3 py-2"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-600">E-mail</label>
+                <input
+                  type="email"
+                  id="email" maxlength="40"
+                  placeholder="John.doe@gmail.com" 
+                  name="email"
+                  class="w-full border rounded px-3 py-2"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-600">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Write your concerns or questions here"
+                  maxlength="1400"
+                  class="w-full border rounded px-3 py-2"
+                ></textarea>
+                <div class="flex justify-end text-xs">Max 1400 letters</div>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+              >
+                Send
+              </button>
+            </form>
+            </div>
       </div>
     </section>
-      <section class="flex flex-col p-3 pr-4">
+      <section class="flex flex-col p-3 pr-4 bg-blue-200 rounded-md mt-6 ml-2">
         <div>
-          <h2 class="font-bold py-8 text-center text-2xl">The team in our<br> swedish office</h2>
+          <h2 class="font-semibold py-2 text-center text-xl">The team in our<br> swedish office</h2>
           <img
             src="https://media.istockphoto.com/id/1413791618/photo/happy-colleagues-doing-team-building-activity.webp?b=1&s=170667a&w=0&k=20&c=p7jJYRY6pGEvAIHEL_gQPNjV_oeNfeuRoxrHS0fSkYg="
             alt="our team"
-            class="my-6"
-          />
+            class="my-2"
+          />            
+          <h1 class="py-8 font-semibold text-xl text-center">Om Rosas resebyrå</h1>
           <p class="text-center">
             The 40 employees are located all over the world, although the office
             is located in Sweden. The team consists of guides, travel agents
@@ -104,8 +146,7 @@
             marvelous team we would not have come this far.
           </p>
           <div class="">
-            <h1 class="py-8 font-bold text-2xl text-center">Om Rosas resebyrå</h1>
-            <p>
+            <p class="text-center pt-8">
               Today we are a company with 40 employees, but Rosa, who alone
               started the company 12 years ago, with a great interest and
               experience in travel, good skills in planning and communication, she
@@ -113,57 +154,32 @@
               up a succesfull company that planned together with her team planned
               over 500 fantastic trips
             </p>
+            <div>
+                <p class="text-center pt-12">Are you a people person who likes to plan and get creative?<br> We are currently looking for a few extra employees on our team and it might just be you!</p>
+                <p class="text-center pt-8">Please send in your personal letter and resume below, and don't forget a picture of you, a face is always a bliss!</p>
+                <div class="max-w-2xl p-4 bg-white mt-10 rounded shadow-md flex flex-col">
+                  <h1 class="text-2xl font-semibold mb-4 text-center pb-4">Here you can attach all your documents to your application </h1>
+                  <form action="/submit" method="post" enctype="multipart/form-data">
+                      <div class="mb-4">
+                          <label for="documents" class="block text-gray-600">Choose Documents</label>
+                          <input type="file" id="documents" name="documents[]" class="w-full" multiple>
+                      </div>
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="John Doe" maxlength="40" class="w-full border-2 mb-4">
+                      <label for="E-mail">E-mail<br></label>
+                      <input type="text" id="E-mail" name="E-mail" maxlength="40" placeholder="yahoo@example.com" class="border-2 mb-4"><br>
+                      <label for="phone">Phone number<br></label>
+                      <input type="text" id="phone" name="phone" maxlength="40" placeholder="+46739998877" class="border-2 mb-4"><br>
+                      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Submit</button>
+                  </form>
           </div>
         </div>
 
     </main>
-    <section
-      class="inline-flex text-center w-screen justify-center items-center"
-    >
-      <div class="flex flex-row justify-center m-8">
-        <form action="/submit" method="post">
-          <div class="mb-4">
-            <label for="name" class="block text-gray-600">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="John Doe" 
-              class="w-full border rounded px-3 py-2"
-            />
+</section>
           </div>
-          <div class="mb-4">
-            <label for="email" class="block text-gray-600">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="John.doe@gmail.com" 
-              name="email"
-              class="w-full border rounded px-3 py-2"
-            />
-          </div>
-          <div class="mb-4">
-            <label for="message" class="block text-gray-600">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Write your concerns or questions here"
-              maxlength="1400"
-              class="w-full border rounded px-3 py-2"
-            ></textarea>
-            <div class="flex justify-end text-xs">Max 1400 letters</div>
-          </div>
-          <button
-            type="submit"
-            class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
-          >
-            Send
-          </button>
-        </form>
         </div>
       </div>
     </section>
-    <!--     </section1> -->
   </body>
 </html>
