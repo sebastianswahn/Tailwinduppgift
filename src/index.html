@@ -11,43 +11,43 @@
 
     <title>Rosas Travelagency</title>
   </head>
-  <body class="bg-orange-900">
+  <body class="bg-pink-200">
     <header
-      class="w-screen text-center justify-center text-3xl font-serif bg-pink-300 rounded-lg text-black sticky mx-1 mt-0 pt-1 sm:text-4xl xs:mt-2"
+      class="pt-2 h-16 text-center justify-center text-xl font-serif bg-pink-300 rounded-lg text-black sticky mx-1 mt-1 sm:text-4xl xs:h-20 xxs:text-3xl xxs:h-24 sm:h-28"
     >
-      <h1>Book your vacation with Rosas travelagency!</h1>
+      Book your vacation with Rosas travelagency!
     </header>
     <main class="sm:flex">
-      <nav>
+      <nav class="mt-1">
         <ul
-          class="flex flex-row list-none w-screen h-28 text-2xl bg-pink-300 rounded-xl mt-2 ml-1 p-2 sm:flex sm:flex-col sm:w-32 sm:h-96 sm:gap-x-20 pl-5 pt-6 sm:text-4xl sm:rounded-xl sm:mt-4 sm:ml-4 sm:gap-4 sm:mr-2"
+          class="flex flex-row list-none text-sm bg-pink-300 rounded-md pt-4 pl-4 mx-1 sm:flex sm:flex-col sm:w-32 sm:h-96 sm:text-4xl sm:rounded-md sm:mt-1 sm:ml-1 sm:mr-2 sm:pl-1 xs:text-xl xxs:pb-4 sm:gap-y-6"
         >
-          <li class="w-1/4 pt-3">
+          <li class="w-1/4">
             <a
-              class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
+              class="no-underline text-gray-500 hover:underline hover:text-black"
               href="./index.html"
               >Home</a
             >
           </li>
           <li class="w-1/4">
             <a
-              class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
+              class="no-underline text-gray-500 hover:underline hover:text-black"
               href="./allevents.html"
-              >All<br />Events</a
+              >All Events</a
             >
           </li>
           <li class="w-1/4">
             <a
-              class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
+              class="no-underline text-gray-500 hover:underline hover:text-black"
               href="./createevent.html"
-              >Create<br />Event</a
+              >Create Event</a
             >
           </li>
-          <li class="w-1/4">
+          <li class="w-1/4 text-end">
             <a
               class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
               href="./aboutus.html"
-              >About<br />us</a
+              >About us</a
             >
           </li>
         </ul>
@@ -56,13 +56,15 @@
         <!-- HERO IMAGE -->
         <section class="flex flex-row justify-center items-center">
           <img
-            src="https://images.unsplash.com/photo-1682687220566-5599dbbebf11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60"
+            src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
             alt="bild som beskriver eventet"
             class="w-full h-96 pt-4 rounded-2xl pb-3"
           />
         </section>
         <!-- VACATION GRID -->
-        <section class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
+        <section
+          class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 sm:mx-20 md:mx-0 xs:mx-16"
+        >
           <div
             class="border-2 border-solid border-black rounded-lg p-2 bg-blue-300 hover:-m-3"
           >
@@ -74,7 +76,7 @@
             <p class="py-4 text-3xl font-semibold">Sweden- Kiruna</p>
             <p class="text-lg underline pb-4">31 January - 13 February</p>
             <p>A journey to northern Sweden to chase the northern lights...</p>
-            <p class="text-sm py-4">Adventures, Challenge, Cold</p>
+            <p class="text-sm py-4 mb-2 italic">Adventures, Challenge, Cold</p>
             <p>
               <a
                 class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
@@ -91,13 +93,13 @@
               alt="Image of a stormy Ireland"
               class="flex flex-row w-full h-36"
             />
-            <p class="py-4 font-semibold">Ireland - Dublin</p>
-            <p class="text-sm underline pb-4">14 April - 21 April 2024</p>
+            <p class="py-4 text-3xl font-semibold">Ireland - Dublin</p>
+            <p class="text-lg underline pb-4">14 April - 21 April 2024</p>
             <p>
               Experience the history and culture of Ireland with multiple guided
               tours throughout the biggest cities of Ireland...
             </p>
-            <p class="text-sm py-4">Culture, history</p>
+            <p class="text-sm py-4 mb-4 italic">Culture, history</p>
             <p>
               <a
                 class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
@@ -114,13 +116,13 @@
               alt="Image of Chicago skyscrapers"
               class="flex flex-row w-full h-36"
             />
-            <p class="py-4 font-semibold">USA - Chicago</p>
-            <p class="text-sm underline pb-4">14 June - 20 June 2024</p>
+            <p class="py-4 text-3xl font-semibold">USA - Chicago</p>
+            <p class="text-lg underline pb-4">14 June - 20 June 2024</p>
             <p>
               A journey for the partypeople, experience the chicago lifestyle
               and all of the different kinds of parties they offer...
             </p>
-            <p class="text-sm py-4">Party, music, festival, nightlife</p>
+            <p class="text-sm py-4 italic">Party, music, festival, nightlife</p>
             <p>
               <a
                 class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
@@ -137,14 +139,14 @@
               alt="diving in australia"
               class="flex flex-row w-full h-36"
             />
-            <p class="py-4 font-semibold">Egypt - Kairo</p>
-            <p class="text-sm underline pb-4">14 Septemer - 21 October 2024</p>
+            <p class="py-4 text-3xl font-semibold">Egypt - Kairo</p>
+            <p class="text-lg underline pb-4">14 Septemer - 21 October 2024</p>
             <p>
               If you feel like some extra sun after a rainy end of summer. Enjoy
               warm sunny weather without being over heated in Egypt. It's a
               perfect journey to relax and swim...
             </p>
-            <p class="text-sm py-4">Sun, relax, beach, ocean</p>
+            <p class="text-sm py-4 italic">Sun, relax, beach, ocean</p>
             <p>
               <a
                 class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
@@ -161,14 +163,16 @@
               alt="Diving in australia"
               class="flex flex-row w-full h-36"
             />
-            <p class="py-4 font-semibold">Australia - Sydney</p>
-            <p class="text-sm underline pb-4">17 November - 7 December 2024</p>
+            <p class="py-4 text-3xl font-semibold">Australia - Sydney</p>
+            <p class="text-lg underline pb-4">17 November - 7 December 2024</p>
             <p>
               If you love the sea, and enjoy scubadiving this is would be a
               great journey for you. Australia provides warm weather and great
               adventures...
             </p>
-            <p class="text-sm py-4">Sea, Diving, Boat, Whales, Turtles</p>
+            <p class="text-sm py-4 mb-7 italic">
+              Sea, Diving, Boat, Whales, Turtles
+            </p>
             <p>
               <a
                 class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
@@ -185,13 +189,15 @@
               alt="Image of the desert in Jordan"
               class="flex flex-row w-full h-36"
             />
-            <p class="py-4 font-semibold">Jordan - Ammam</p>
-            <p class="text-sm underline pb-4">12 October - 20 October 2025</p>
+            <p class="py-4 text-3xl font-semibold">Jordan - Ammam</p>
+            <p class="text-lg underline pb-4">12 October - 20 October 2025</p>
             <p>
               Experience middle eastern culture and wander in the desert to see
               beautiful ancient monuments, have fun moments with camel rides...
             </p>
-            <p class="text-sm py-4">History, Culture, Desert, Camels, Music</p>
+            <p class="text-sm py-4 italic">
+              History, Culture, Desert, Camels, Music
+            </p>
             <p>
               <a
                 class="no-underline text-gray-500 hover:underline hover:text-black hover:cursor-pointer"
