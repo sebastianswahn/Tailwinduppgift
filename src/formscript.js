@@ -42,7 +42,7 @@ function validateCity() {
   const city = document.querySelector("#city");
   const cityError = document.querySelector("#cityError");
   if (city.value.trim() === "") {
-    cityError.textContent = "You need to choose a country";
+    cityError.textContent = "You need to choose a city";
   } else if (city.value.trim().length <= 3) {
     cityError.textContent = "The city needs to contain more than 2 characters";
   } else {
