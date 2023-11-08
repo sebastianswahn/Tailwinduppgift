@@ -50,46 +50,48 @@
       </ul>
     </nav>
     <div class="flex flex-col md:mx-14 lg:mx-36 xl:mx-64">
-      <form
+      <form id="requestForm"
         class="flex flex-col m-2 bg-pink-200 text-center rounded-lg form:text-lg text-md">
         <fieldset class="flex flex-col border-4 m-6 rounded-lg border-solid border-gray-400">
             <legend class="text-lg italic">Tailor your own journey</legend>
             <div class="py-5">
-        <label for="name" class="font-bold text-md form:text-lg">Choose a name<br class="form:hidden"> for your journey<br></label>
-        <textarea class="mt-4 w-36 form:w-56" id="name" name="name" maxlength="75" placeholder="Ex. My honeymoon"></textarea>
+        <label for="journeyName" class="font-bold text-md form:text-lg">Choose a name<br class="form:hidden"> for your journey<br></label>
+        <textarea id="journeyName" class="mt-4 w-36 form:w-56"  maxlength="75" placeholder="Ex. My honeymoon"></textarea>
+
         </div>
         <div class="h-16">
-        <label for="Country" class="font-bold text-md form:text-lg">Country<br></label>
-        <input class="w-36 form:w-60 my-4" type="text" id="Country" name="Country" placeholder="Ex, Sweden, France, China" />
+        <label for="country" class="font-bold text-md form:text-lg">Country<br></label>
+        <input class="w-36 form:w-60 my-4" type="text" id="country" placeholder="Ex, Sweden, France, China" />
+
         </div>
         <div class="my-6">
-        <label for="City" class="font-bold mb-5 text-md form:text-lg">City<br></label>
-        <input type="text" class="w-36 form:w-60 mt-4" id="City" name="City" placeholder="Ex, Stockholm, Paris, Beijing" />
+        <label for="city" class="font-bold mb-5 text-md form:text-lg">City<br></label>
+        <input type="text" class="w-36 form:w-60 mt-4" id="city" name="City" placeholder="Ex, Stockholm, Paris, Beijing" />
         </div>
         <div class="">
-        <label for="Amount" class="font-bold text-md form:text-lg">How many wish<br class="form:hidden">  to join for<br class="form:hidden">  this journey?<br></label>
-        <input class="w-16 m-5" type="number" id="Amount" name="Amount" min="1" max="32" placeholder="1-32">
+        <label for="amount" class="font-bold text-md form:text-lg">How many wish<br class="form:hidden">  to join for<br class="form:hidden">  this journey?<br></label>
+        <input class="w-16 m-5" type="number" id="amount" name="amount" min="1" max="52" placeholder="1-32">
         </div>
         <div class="flex flex-col">
-        <label for="type" class="font-bold text-md form:text-lg">Are you traveling<br class="form:hidden"> private or business?</label><br>
+        <label class="font-bold text-md form:text-lg">Are you traveling<br class="form:hidden"> private or business?</label><br>
 
         
-        <label for="type">Private<br></label>
-        <input type="checkbox" id="type" name="private"><br>
-        <label for="type">Business<br></label>
-        <input type="checkbox" id="type" name="Type">
+        <label for="private">Private<br></label>
+        <input type="checkbox" id="private" name="private"><br>
+        <label for="business">Business<br></label>
+        <input type="checkbox" id="business" name="Type">
         </div>
         <div class="py-6">
-        <label for="traveldate"  class="font-bold text-md form:text-lg "
+        <label for="travelDate"  class="font-bold text-md form:text-lg "
           >Select the date<br class="form:hidden">  and time you wish<br class="form:hidden"> to travel from Arlanda</label
         ><br>
-        <input type="datetime-local" class="border rounded w-32 form:w-2/3 px-3 my-4" />
+        <input id="travelDate" type="datetime-local" class="border rounded w-32 form:w-2/3 px-3 my-4" />
         </div>
         <div>
-        <label for="returmdate" class="font-bold text-md form:text-lg"
+        <label for="returnDate" class="font-bold text-md form:text-lg"
           >Select the date <br class="form:hidden">and time you wish <br class="form:hidden">to arrive<br class="form:hidden"> at Arlanda<br></label
         >
-        <input type="datetime-local" class="border my-4 rounded w-32 form:w-2/3 px-3" />
+        <input id="returnDate" type="datetime-local" class="border my-4 rounded w-32 form:w-2/3 px-3" />
         </div>
         <div class="my-4">
         <label for="Other Requests" class="font-bold text-md form:text-lg">If you have any<br class="form:hidden"> other requests about<br class="form:hidden"> your journey,<br> write<br class="form:hidden"> them here</label>
@@ -101,15 +103,23 @@
         <p class="text-xs text-center">Max. 800 letters </p>
         </fieldset>
         <div class="p-4">
-        <button
+        <button id="formbutton"
           type="submit"
           class="bg-pink-300 w-32 h-16 rounded-lg"
         >
           Send request
         </button> 
       </form>
+      <div>        
+        <p class="text-sm text-red-500 mt-2 mb-2" id="journeyNameError"></p>
+        <p class="text-sm text-red-500 mt-2" id="countryError"></p>
+        <p class="text-sm text-red-500 mt-2" id="cityError"></p>
+        <p class="text-sm text-red-500 mt-2" id="amountError"></p>
+        <p class="text-sm text-red-500 mt-2" id="checkBoxError"></p>
+      </div>
       </div>
     </div>
 </main>
+<script src="./formscript.js"></script>
   </body>
 </html>
