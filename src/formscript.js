@@ -7,6 +7,9 @@ requestForm.addEventListener("submit", (e) => {
   validateCity();
   validateTravelersAmount();
   validateCheckBox();
+  validateRequest();
+  validateTravelDate();
+  validateReturnDate();
 });
 
 function validateName() {
@@ -63,9 +66,46 @@ function validateCheckBox() {
   const private = document.querySelector("#private");
   const business = document.querySelector("#business");
   const checkBoxError = document.querySelector("#checkBoxError");
+  var checkBoxes = business && private;
   if (private && business.checked) {
     checkBoxError.textContent = "You can only chose business OR private";
-  } else if (!private || business.checked) {
+  } else if (!checkBoxes.checked) {
     checkBoxError.textContent = "You need to choose private or business";
+  } else {
+    checkBoxError.textContent = " ";
+  }
+}
+
+function validateRequest() {
+  const request = document.querySelector("#otherRequests");
+  const requestsError = document.querySelector("#otherRequestsError");
+  if (request.value.trim() === "") {
+    requestsError.textContent = "You need to make a request";
+  } else if (request.value.trim().length <= 36) {
+    requestsError.textContent =
+      "Your request needs to be at least 36 characters";
+  } else {
+    requestsError.textContent = "";
+  }
+}
+
+function validateTravelDate() {
+  const travelDate = document.querySelector("#travelDate");
+  const travelDateError = document.querySelector("#travelDateError");
+  if (travelDate.value === null) {
+    travelDateError.textContent = "You need to pick a date you wish to travel";
+  } else {
+    travelDateError.textContent = "";
+  }
+}
+function validateReturnDate() {
+  const returnDate = document.querySelector("#returnDate");
+  const returnDateError = document.querySelector("#returnDateError");
+  console.log(travelDate);
+  if (returnDate.value === null) {
+    returnDateError.textContent =
+      "You need to pick a date you wish to come home";
+  } else {
+    returnDateError.textContent = "";
   }
 }
