@@ -12,6 +12,18 @@ requestForm.addEventListener("submit", (e) => {
   validateReturnDate();
 });
 
+/* const theWholeRequest = {
+  Journey: requestForm.journeyName.value,
+  Country: requestForm.country.value,
+  City: requestForm.city.value,
+  Amount: requestForm.travelers.value,
+  Type: requestForm.checkBoxes.value,
+  Requests: requestForm.request.value,
+  Travel: requestForm.travelDate.value,
+  Return: requestForm.returnDate.value,
+};
+onsubmit.console.log(theWholeRequest); */
+
 function validateName() {
   const journeyName = document.querySelector("#journeyName");
   const journeyNameError = document.querySelector("#journeyNameError");
